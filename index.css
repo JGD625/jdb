@@ -6,7 +6,7 @@ font-family: 'Raleway', sans-serif;
 body {
     background: url(images/clouds-hd-wallpaper-outdoors-133953.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: 1800px;
     margin:0;
     overflow: hidden;
     padding:0;  
@@ -15,7 +15,7 @@ body {
 header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 25px;
     z-index: 2;
     width: 100%;
     color: #fff;
@@ -36,6 +36,9 @@ nav {
     height: 550px;
     width: 320px;
     background-size: cover; 
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 
 
@@ -53,12 +56,13 @@ nav {
     padding:0.35em 1.2em;
     border:0.1em solid gray;
     font-family: 'Raleway', sans-serif;
+    background-color: rgba(10, 71, 71, 0.2);
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
     font-weight:300;
-    color: #000;
+    color: #fff;
     text-align: center;
     transition: all 0.2s;
 }
@@ -68,42 +72,38 @@ nav {
     background-color:gray;
     }
 
-    /*HEADER ANIMATION*/
-
-    .swing-in-top-fwd {
-        -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    .hero-text {
+        position: relative;
+        bottom: 500px;
+        left: 500px;
     }
 
-    @-webkit-keyframes swing-in-top-fwd {
-        0% {
-          -webkit-transform: rotateX(-100deg);
-                  transform: rotateX(-100deg);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: rotateX(0deg);
-                  transform: rotateX(0deg);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
-          opacity: 1;
-        }
+
+   
+      /*Typewrite Animation */
+
+      .animate-A {
+        overflow: hidden; 
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        animation: typing 4s steps(80, end);
+        animation-delay: -1s;
       }
-      @keyframes swing-in-top-fwd {
-        0% {
-          -webkit-transform: rotateX(-100deg);
-                  transform: rotateX(-100deg);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: rotateX(0deg);
-                  transform: rotateX(0deg);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
-          opacity: 1;
-        }
+
+      .animate-B {
+        overflow: hidden; 
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        animation: typing 6s steps(80, end);
+      }
+      
+      @keyframes typing {
+        from { opacity: 0}
+        to { opacity: 100%}
       }
