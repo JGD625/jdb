@@ -1,0 +1,109 @@
+/* FONT CACHE 
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+body {
+    background: url(images/clouds-hd-wallpaper-outdoors-133953.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    margin:0;
+    overflow: hidden;
+    padding:0;  
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+nav {
+    background-image: url(images/iphone.png);
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 320px;
+    background-size: cover; 
+}
+
+
+
+.nav-list {
+    list-style-type: none;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    width: 130px;
+}
+
+.navbutton { 
+    display: inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid gray;
+    font-family: 'Raleway', sans-serif;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color: #000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+    a.button1:hover {
+    color:#000000;
+    background-color:gray;
+    }
+
+    /*HEADER ANIMATION*/
+
+    .swing-in-top-fwd {
+        -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+                animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    }
+
+    @-webkit-keyframes swing-in-top-fwd {
+        0% {
+          -webkit-transform: rotateX(-100deg);
+                  transform: rotateX(-100deg);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateX(0deg);
+                  transform: rotateX(0deg);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+          opacity: 1;
+        }
+      }
+      @keyframes swing-in-top-fwd {
+        0% {
+          -webkit-transform: rotateX(-100deg);
+                  transform: rotateX(-100deg);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateX(0deg);
+                  transform: rotateX(0deg);
+          -webkit-transform-origin: top;
+                  transform-origin: top;
+          opacity: 1;
+        }
+      }
