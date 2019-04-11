@@ -99,7 +99,7 @@ nav {
         white-space: nowrap; 
         margin: 0 auto; 
         letter-spacing: .15em; 
-        animation: typing 6s steps(80, end);
+        animation: typing 4s steps(80, end);
       }
       
       @keyframes typing {

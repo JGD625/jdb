@@ -19,17 +19,18 @@
             <div id="main-left">
                 <nav>
                     <ul class="nav-list">
-                        <li class="navbutton">Meet Julie</li>
-                        <li class="navbutton">Portfolio</li>
-                        <li class="navbutton">Resume</li>
-                        <li class="navbutton">Social</li>
-                        <li class="navbutton">Contact</li>
+                        <li class="navbutton"><a onclick="displayProfile()">Timeline</a>Meet Julie</li>
+                        <li class="navbutton"><a onclick="displayPortfolio()">Timeline</a>Portfolio</li>
+                        <li class="navbutton"><a onclick="displayResume()">Timeline</a>Resume</li>
+                        <li class="navbutton"><a onclick="displayContact()">Timeline</a>Contact</li>
                     </ul>
                 </nav>
             </div>
             <div id="main-right">
                 <div class="hero-text"><h2 class="animate-A">My name is Julie,</h2><h2 class="animate-B">and I rather enjoy making things.</h2> </div>
             </div>
+            <section id="js-content" class="hidden"></section>
     </main>
+    <script src="index.js"></script>
   </body>
   </html>
