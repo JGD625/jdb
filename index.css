@@ -74,10 +74,9 @@ nav {
 
     .hero-text {
         position: relative;
+        left: 400px;
         bottom: 500px;
-        left: 500px;
     }
-
 
    
       /*Typewrite Animation */
