@@ -4,12 +4,14 @@ font-family: 'Raleway', sans-serif;
 */
 
 body {
+    font-family: 'Raleway', sans-serif;
     background: url(images/clouds-hd-wallpaper-outdoors-133953.jpg);
     background-repeat: no-repeat;
     background-size: 1800px;
     margin:0;
     overflow: hidden;
-    padding:0;  
+    padding:0; 
+    box-sizing: border-box; 
 }
 
 header {
@@ -23,12 +25,18 @@ header {
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
+    
 }
+
+#grid-container {
+  display: inline-grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns:350px auto;
+  grid-template-rows:600px;
+}
+
+/*Navigation*/
 
 nav {
     background-image: url(images/iphone.png);
@@ -40,8 +48,6 @@ nav {
     bottom: 0px;
     left: 0px;
 }
-
-
 
 .nav-list {
     list-style-type: none;
@@ -67,21 +73,106 @@ nav {
     transition: all 0.2s;
 }
 
-    a.button1:hover {
+a.button1:hover {
     color:#000000;
-    background-color:gray;
+    background-color:green;
     }
 
-    .hero-text {
-        position: relative;
-        left: 400px;
-        bottom: 500px;
+/*CARDS*/
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  margin: 10px 5px 10px 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Raleway', sans-serif;
+}
+
+.portfolio-thumbnail {
+  width: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: 0px;
+ }
+
+/*GENERAL CLASSES*/
+
+.hidden {
+      display: none;
     }
+
+
+/*JS*/
+#js-content {
+  position: fixed;
+  top: 20px;
+  left: 400px;
+}
+ 
+/*Profile*/
+#profile p{
+color: white;
+background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*IMAGES*/
+
+.tarot {
+      width: 200px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      float: left;
+      padding: 10px;
+      margin: 20px;
+      
+    }
+
 
    
-      /*Typewrite Animation */
+/*TEXT*/
 
-      .animate-A {
+.headline {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 200px;
+
+}
+.white {
+  color:white;
+}
+
+.teal {
+  color: teal;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.hr1 {
+  padding: 0px;
+}
+
+
+
+/*Typewrite Animation */
+
+.animate-A {
         overflow: hidden; 
         font-family: 'Raleway', sans-serif;
         color: #fff;
@@ -92,17 +183,17 @@ nav {
         animation-delay: -1s;
       }
 
-      .animate-B {
-        overflow: hidden; 
-        font-family: 'Raleway', sans-serif;
-        color: #fff;
-        white-space: nowrap; 
-        margin: 0 auto; 
-        letter-spacing: .15em; 
-        animation: typing 4s steps(80, end);
-      }
+.animate-B {
+      overflow: hidden; 
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      white-space: nowrap; 
+      margin: 0 auto; 
+      letter-spacing: .15em; 
+      animation: typing 4s steps(80, end);
+    }
       
-      @keyframes typing {
+@keyframes typing {
         from { opacity: 0}
         to { opacity: 100%}
       }

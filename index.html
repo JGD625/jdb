@@ -6,31 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JDButisbauch</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
   <body>
-      <header>
-          <h1 class="swing-in-top-fwd">JDButisbauch</h1>
-      </header>
-    <main id="main-container">
-            <div id="main-left">
-                <nav>
-                    <ul class="nav-list">
-                        <li class="navbutton"><a onclick="displayProfile()">Timeline</a>Meet Julie</li>
-                        <li class="navbutton"><a onclick="displayPortfolio()">Timeline</a>Portfolio</li>
-                        <li class="navbutton"><a onclick="displayResume()">Timeline</a>Resume</li>
-                        <li class="navbutton"><a onclick="displayContact()">Timeline</a>Contact</li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="main-right">
-                <div class="hero-text"><h2 class="animate-A">My name is Julie,</h2><h2 class="animate-B">and I rather enjoy making things.</h2> </div>
+        <header>
+            <h1 class="swing-in-top-fwd">JDButisbauch</h1>
+        </header>
+        <main id="main-container">
+            <div id="grid-container">
+                <div id="main-left">
+                    <nav>
+                      <ul class="nav-list">
+                        <li class="navbutton"><a onclick="displayProfile()">Meet Julie</a></li>
+                        <li class="navbutton"><a onclick="displayPortfolio()">Portfolio</a></li>
+                        <li class="navbutton"><a onclick="displayResume()">Resume</a></li>
+                        <li class="navbutton"><a onclick="displayContact()">Contact</a></li>
+                      </ul>
+                    </nav>
+                </div>
+                <div id="main-right">
+                    <div class="hero-text"><h2 class="animate-A">My name is Julie,</h2><h2 class="animate-B">and I rather enjoy making things.</h2> </div>
+                </div>
             </div>
             <section id="js-content" class="hidden"></section>
-    </main>
+        </main>
     <script src="index.js"></script>
   </body>
   </html>
